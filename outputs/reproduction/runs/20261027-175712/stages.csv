@@ -1,0 +1,8 @@
+stage,status,exit_code,elapsed_seconds,evidence
+environment,PASS,0,2.365,runs/20261027-175712/environment.stdout.log
+author-compile,PASS,0,9.837,runs/20261027-175712/author-compile.stdout.log
+compile-bug,PASS,0,2.385,runs/20261027-175712/compile-bug.stdout.log
+compile-patch,PASS,0,1.986,runs/20261027-175712/compile-patch.stdout.log
+compile-fix,PASS,0,2.196,runs/20261027-175712/compile-fix.stdout.log
+bundle-faulty,PASS,0,0.751,runs/20261027-175712/bundle-faulty.stdout.log
+difftgen,PASS,0,138.35,runs/20261027-175712/difftgen.stdout.log

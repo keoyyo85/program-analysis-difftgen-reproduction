@@ -1,0 +1,11 @@
+diff --git a/run b/run
+index 0781bfc..43de895 100755
+--- a/run
++++ b/run
+@@ -1,5 +1,5 @@
+ #!/bin/bash
+ 
+-proj_dir=./ #To be CUSTOMIZED (in its absolute path)
++proj_dir=/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/work/DiffTGen # project-local configuration
+ 
+ java -cp :${proj_dir}/lib/*:${proj_dir}/build testgen.Main $*

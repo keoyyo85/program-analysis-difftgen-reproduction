@@ -1,0 +1,11 @@
+Buildfile: /mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/work/DiffTGen/tclassrunner.xml
+
+run-tclass:
+     [java] Picked up JAVA_TOOL_OPTIONS: -Xmx1024m -XX:ActiveProcessorCount=2 -Drandom_seed=2026102701 -Doutput_variables=TARGET_CLASS,Random_Seed,Coverage,Total_Goals,Covered_Goals
+     [java] Test Method: test042
+     [java] PRIM_LOC:(E)0,(C)org.apache.commons.lang.BooleanUtils,(MSIG)toBoolean(String)0,(I)0
+     [java] TYPE:Boolean
+     [java] VALUE:false
+
+BUILD SUCCESSFUL
+Total time: 3 seconds

@@ -1,0 +1,7 @@
+Picked up JAVA_TOOL_OPTIONS: -Xmx1024m -XX:ActiveProcessorCount=2 -Drandom_seed=2026102702 -Doutput_variables=TARGET_CLASS,Random_Seed,Coverage,Total_Goals,Covered_Goals
+openjdk version "1.8.0_492"
+OpenJDK Runtime Environment (Zulu 8.94.0.17-CA-linux64) (build 1.8.0_492-b09)
+OpenJDK 64-Bit Server VM (Zulu 8.94.0.17-CA-linux64) (build 25.492-b09, mixed mode)
+Picked up JAVA_TOOL_OPTIONS: -Xmx1024m -XX:ActiveProcessorCount=2 -Drandom_seed=2026102702 -Doutput_variables=TARGET_CLASS,Random_Seed,Coverage,Total_Goals,Covered_Goals
+javac 1.8.0_492
+Picked up JAVA_TOOL_OPTIONS: -Xmx1024m -XX:ActiveProcessorCount=2 -Drandom_seed=2026102702 -Doutput_variables=TARGET_CLASS,Random_Seed,Coverage,Total_Goals,Covered_Goals

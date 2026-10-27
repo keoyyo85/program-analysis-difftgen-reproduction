@@ -1,0 +1,2 @@
+cwd=/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/work/DiffTGen
+java -cp '/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-183648/verification/bug:/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-183648/faulty-with-dependencies.jar:/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/work/DiffTGen/lib/*' org.junit.runner.JUnitCore org.apache.commons.lang.DiffTGen0Test

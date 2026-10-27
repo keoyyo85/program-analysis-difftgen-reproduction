@@ -1,0 +1,26 @@
+{
+  "final_test": "runs/20261027-183648/generated/Lang_51_nopol/testcase/DiffTGen0Test.java",
+  "origin": "DiffTGen automatic generation",
+  "input": "Fes",
+  "expected": false,
+  "versions": {
+    "bug": {
+      "junit_version": "4.11",
+      "exit": 0,
+      "status": "PASS"
+    },
+    "patch": {
+      "junit_version": "4.11",
+      "exit": 1,
+      "status": "EXPECTED_ASSERTION_FAILURE"
+    },
+    "fix": {
+      "junit_version": "4.11",
+      "exit": 0,
+      "status": "PASS"
+    }
+  },
+  "replay_processes": 51,
+  "replay_process_seconds_sum": 242.17,
+  "manual_diagnostic": "NOT_EXECUTED_AUTOMATIC_COUNTEREXAMPLE_FOUND"
+}

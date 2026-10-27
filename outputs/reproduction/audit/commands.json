@@ -1,0 +1,68 @@
+[
+  {
+    "name": "compile-probes",
+    "command": "javac -cp /mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/work/DiffTGen/lib/evosuite-1.0.2.jar -d /mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/audit/helper /mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/LoadProbe.java /mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/SeedProbe.java",
+    "exit": 0,
+    "seconds": 3.138929867999991
+  },
+  {
+    "name": "seed-probe",
+    "command": "java -Drandom_seed=2026102701 -cp /mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/audit/helper:/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/work/DiffTGen/lib/evosuite-1.0.2.jar SeedProbe",
+    "exit": 0,
+    "seconds": 1.59328475800001
+  },
+  {
+    "name": "load-bug-plain",
+    "command": "java -verbose:class -cp '/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/audit/helper:/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-175712/classes/bug:/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-175712/faulty-with-dependencies.jar:/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/work/DiffTGen/lib/*' LoadProbe off X2f",
+    "exit": 0,
+    "seconds": 1.0435942160000025
+  },
+  {
+    "name": "load-bug-output-instrumented",
+    "command": "java -verbose:class -cp '/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/audit/helper:/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-175712/generated/Lang_51_nopol/bug/instru0/build/classes:/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-175712/faulty-with-dependencies.jar:/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/work/DiffTGen/lib/*' LoadProbe off X2f",
+    "exit": 0,
+    "seconds": 1.4079260949999934
+  },
+  {
+    "name": "bytecode-bug",
+    "command": "javap -classpath /mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-175712/classes/bug -c org.apache.commons.lang.BooleanUtils",
+    "exit": 0,
+    "seconds": 2.255027811000005
+  },
+  {
+    "name": "load-patch-plain",
+    "command": "java -verbose:class -cp '/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/audit/helper:/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-175712/classes/patch:/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-175712/faulty-with-dependencies.jar:/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/work/DiffTGen/lib/*' LoadProbe off X2f",
+    "exit": 0,
+    "seconds": 1.0342676629999943
+  },
+  {
+    "name": "load-patch-output-instrumented",
+    "command": "java -verbose:class -cp '/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/audit/helper:/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-175712/generated/Lang_51_nopol/patch/instru0/build/classes:/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-175712/faulty-with-dependencies.jar:/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/work/DiffTGen/lib/*' LoadProbe off X2f",
+    "exit": 0,
+    "seconds": 1.2410407750000019
+  },
+  {
+    "name": "bytecode-patch",
+    "command": "javap -classpath /mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-175712/classes/patch -c org.apache.commons.lang.BooleanUtils",
+    "exit": 0,
+    "seconds": 2.5338092639999985
+  },
+  {
+    "name": "load-fix-plain",
+    "command": "java -verbose:class -cp '/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/audit/helper:/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-175712/classes/fix:/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-175712/faulty-with-dependencies.jar:/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/work/DiffTGen/lib/*' LoadProbe off X2f",
+    "exit": 0,
+    "seconds": 1.851887767000008
+  },
+  {
+    "name": "load-fix-output-instrumented",
+    "command": "java -verbose:class -cp '/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/audit/helper:/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-175712/generated/Lang_51_nopol/fix/instru0/build/classes:/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-175712/faulty-with-dependencies.jar:/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/work/DiffTGen/lib/*' LoadProbe off X2f",
+    "exit": 0,
+    "seconds": 1.1360070479999962
+  },
+  {
+    "name": "bytecode-fix",
+    "command": "javap -classpath /mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-175712/classes/fix -c org.apache.commons.lang.BooleanUtils",
+    "exit": 0,
+    "seconds": 2.2945705799999985
+  }
+]

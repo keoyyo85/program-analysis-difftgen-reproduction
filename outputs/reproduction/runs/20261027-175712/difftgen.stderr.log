@@ -1,0 +1,17 @@
+Picked up JAVA_TOOL_OPTIONS: -Xmx1024m -XX:ActiveProcessorCount=2
+*** Running Target 0 Trial 0 ***
+
+Target 0 Trial 0 Running EvoSuite...
+Target 0 Trial 0 Finish running EvoSuite.
+Target 0 Trial 0 generated an EvoSuite class at /mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-175712/generated/Lang_51_nopol/target/0/0/evosuite-tests/org/apache/commons/lang/BooleanUtils_ESTest.java
+Target 0 Trial 0: Change Exercised!
+Target 0 Trial 0 finish generating & compiling test class.
+Target 0 Trial 0 finish running bug & patch against the test method.
+Target 0 Trial 0 finish writing oracle results.
+Target 0 Trial 0 Checking Running Results from Test Method: test007
+Target 0 Trial 0: Identical Running Results.
+Target 0 Trial 0 Checking Running Results from Test Method: test039
+Target 0 Trial 0: Identical Running Results.
+Target 0 Trial 0 finish Checking Running Results.
+Target 0 Trial 0: No Different Semantics Found.
+*** Target 0 Trial 0 finished ***

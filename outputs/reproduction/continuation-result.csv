@@ -1,0 +1,5 @@
+run,phase,budget_seconds,requested_seed,actual_seed,difftgen_exit,difftgen_seconds,raw_tests,final_tests,validated_patch_vs_fix_tests,evidence
+20261027-175712,baseline,60,UNRECORDED,UNRECORDED,0,138.35,120,0,NONE,runs/20261027-175712
+20261027-183131,continuation,180,2026102701,2026102701,0,293.857,117,0,NONE,runs/20261027-183131
+20261027-183648,continuation,180,2026102702,2026102702,0,290.228,122,1,DiffTGen0Test.java,runs/20261027-183648
+20261027-184225,continuation,180,2026102703,2026102703,0,281.104,122,0,NONE,runs/20261027-184225

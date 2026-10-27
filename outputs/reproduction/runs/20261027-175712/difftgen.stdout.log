@@ -1,0 +1,33 @@
+Bug ID: Lang_51
+Repair Tool: nopol
+DiffTGen Dir: /mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/work/DiffTGen
+EvoSuite Jar File: /mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/work/DiffTGen/lib/evosuite-1.0.2.jar
+Dependency Jar File: /mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-175712/faulty-with-dependencies.jar
+Output Directory: /mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-175712/generated
+Input File: /mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-175712/delta.txt
+Oracle Input File: /mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-175712/oracle.txt
+EvoSuite Trials: 1
+Evosuite Timeout (in sec.): 60
+Force to Compile Files: true
+Run Parallel: false
+Use Simple Target: false
+Stop if Overfitting Patches Found: true
+Run EvoSuite: true
+Initializing...
+Initializing Done.
+Creating Instrumented Files...
+Creating Instrumented Files Done.
+Compiling Instrumented Files...
+Compiling Instrumented Files Done.
+Creating Test Target(s)...
+Test Target No.0:
+Package Name: org.apache.commons.lang
+File Name: BooleanUtils.java
+Goal Locs: slc:680,6 
+Creating Test Target(s) Done.
+Compiling Test Target(s)...
+Compiling Test Target(s) Done.
+Generating Test Case(s)...
+Working on Test Target No.0 for Test Case Generation.
+Total execution time: 138816
+Found Nothing.

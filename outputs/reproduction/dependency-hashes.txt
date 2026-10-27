@@ -1,0 +1,22 @@
+
+Algorithm : SHA256
+Hash      : 763ACDA4A69588C9EA8817A952851FF0C2FC4BFFA1D081C2565DC407F29D5794
+Path      : D:\CodexOutputs\2026-10-27\14-difftgen-https-github-com-qixin5\work\deps\ant.jar
+
+Algorithm : SHA256
+Hash      : 5C8551990307A032336D98DDAED549A39A689F07D4D4C6B950601BF22B3D6A1B
+Path      : D:\CodexOutputs\2026-10-27\14-difftgen-https-github-com-qixin5\work\deps\ant-launcher.jar
+
+Algorithm : SHA256
+Hash      : 9A455EEB4BEDC1D8BCD4B8099D4B1F18F1BF1BC977CD6E389A106FE0CF366711
+Path      : D:\CodexOutputs\2026-10-27\14-difftgen-https-github-com-qixin5\work\deps\ant-junit.jar
+
+Algorithm : SHA256
+Hash      : 069361C71F22F8D7FBD4C3A568C015E2809327FC2E68699AEB63A64178CDE56F
+Path      : D:\CodexOutputs\2026-10-27\14-difftgen-https-github-com-qixin5\work\deps\commons-lang-2.3.jar
+
+
+Algorithm : SHA256
+Hash      : A6D14104F2E7186CBA8943C4DC182938DB91509DC2C0EF9ECEE046C864624D36
+Path      : D:\CodexOutputs\2026-10-27\14-difftgen-https-github-com-qixin5\work\deps\jdk8-complete.tar.gz
+

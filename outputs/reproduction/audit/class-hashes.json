@@ -1,0 +1,32 @@
+{
+  "bug": {
+    "plain": {
+      "file": "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-175712/classes/bug/org/apache/commons/lang/BooleanUtils.class",
+      "sha256": "fbb5e112f71931594ef7a26dcdf2693a96574e3f46dce2e1ab3177338f2ee0f1"
+    },
+    "output-instrumented": {
+      "file": "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-175712/generated/Lang_51_nopol/bug/instru0/build/classes/org/apache/commons/lang/BooleanUtils.class",
+      "sha256": "3f3d031e688533f72674dea19d1be2ebd2e7821e3fcf0f51c98cefec3c62b039"
+    }
+  },
+  "patch": {
+    "plain": {
+      "file": "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-175712/classes/patch/org/apache/commons/lang/BooleanUtils.class",
+      "sha256": "76c3db8bc018895ae5db75a271885b3be8eec89d05e69740a3f0950de43256e9"
+    },
+    "output-instrumented": {
+      "file": "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-175712/generated/Lang_51_nopol/patch/instru0/build/classes/org/apache/commons/lang/BooleanUtils.class",
+      "sha256": "117fa8d1feb314431feeebef9c693ccbb4250bf4fb2a52d268292c73b851d0af"
+    }
+  },
+  "fix": {
+    "plain": {
+      "file": "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-175712/classes/fix/org/apache/commons/lang/BooleanUtils.class",
+      "sha256": "da3a6a52ce8f166b9605b06ad257928fadcd983afcf807600f72db8dbe3c30d7"
+    },
+    "output-instrumented": {
+      "file": "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-175712/generated/Lang_51_nopol/fix/instru0/build/classes/org/apache/commons/lang/BooleanUtils.class",
+      "sha256": "ef9e4d1d4e32ec55afaab55e4eba88cc017e03d8320f8c362930b8c6664f47ad"
+    }
+  }
+}

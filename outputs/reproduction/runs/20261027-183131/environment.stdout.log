@@ -1,0 +1,6 @@
+Linux FX85 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+git version 2.34.1
+Apache Ant(TM) version 1.10.15 compiled on August 25 2024
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G  6.9G  949G   1% /
+D:\             752G  155G  598G  21% /mnt/d

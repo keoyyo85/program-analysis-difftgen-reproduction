@@ -1,0 +1,17 @@
+
+Algorithm : SHA256
+Hash      : 0853D6D4DF53AB6E8E78715B27A77FEA581FDB9841381744AC06D56F41BE360E
+Path      : D:\CodexOutputs\2026-10-27\14-difftgen-https-github-com-qixin5\outputs\reproduction\sample\fix\BooleanUtils.java
+
+Algorithm : SHA256
+Hash      : EE5FE4714D2666A99E039EEF4F97A6AB84113E12FD755E6660CEAEAAA7E7BF9B
+Path      : D:\CodexOutputs\2026-10-27\14-difftgen-https-github-com-qixin5\outputs\reproduction\sample\bug\BooleanUtils.java
+
+Algorithm : SHA256
+Hash      : 62F04185D6C9274BCAA76C36CD3437CF9DFD1B8FCBEE9F371B6B723963C79BE7
+Path      : D:\CodexOutputs\2026-10-27\14-difftgen-https-github-com-qixin5\outputs\reproduction\sample\patch\BooleanUtils.java
+
+Algorithm : SHA256
+Hash      : 4365FFF736BB6E291D79615484240CE9D3780159D27176831F46ADC9BC1D4AB4
+Path      : D:\CodexOutputs\2026-10-27\14-difftgen-https-github-com-qixin5\work\DiffTGen\lib\evosuite-1.0.2.jar
+

@@ -1,0 +1,8 @@
+{
+  "search_budget_seconds": 180,
+  "requested_seed": 2026102703,
+  "trials": 1,
+  "parallel": false,
+  "JAVA_TOOL_OPTIONS": "-Xmx1024m -XX:ActiveProcessorCount=2 -Drandom_seed=2026102703 -Doutput_variables=TARGET_CLASS,Random_Seed,Coverage,Total_Goals,Covered_Goals",
+  "seed_interface": "EvoSuite JVM random_seed property; no DiffTGen seed option"
+}

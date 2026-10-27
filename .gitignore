@@ -1,0 +1,11 @@
+/work/*
+!/work/DiffTGen
+**/build/
+**/__pycache__/
+*.class
+*.jar
+*.pyc
+*.tar.gz
+*.zip
+/outputs/reproduction/course-topic14.txt
+/outputs/reproduction/github-created.png

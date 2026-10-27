@@ -1,0 +1,308 @@
+[
+  {
+    "run": "20261027-175712",
+    "stage": "compile-raw-bug",
+    "exit": 0,
+    "seconds": 6.048
+  },
+  {
+    "run": "20261027-175712",
+    "stage": "raw-junit-bug",
+    "exit": 0,
+    "seconds": 13.791
+  },
+  {
+    "run": "20261027-175712",
+    "stage": "selected-observation-bug",
+    "exit": 0,
+    "seconds": 2.649
+  },
+  {
+    "run": "20261027-175712",
+    "stage": "load-bug",
+    "exit": 0,
+    "seconds": 1.043
+  },
+  {
+    "run": "20261027-175712",
+    "stage": "compile-raw-patch",
+    "exit": 0,
+    "seconds": 4.393
+  },
+  {
+    "run": "20261027-175712",
+    "stage": "raw-junit-patch",
+    "exit": 0,
+    "seconds": 13.175
+  },
+  {
+    "run": "20261027-175712",
+    "stage": "selected-observation-patch",
+    "exit": 0,
+    "seconds": 1.661
+  },
+  {
+    "run": "20261027-175712",
+    "stage": "load-patch",
+    "exit": 0,
+    "seconds": 1.1
+  },
+  {
+    "run": "20261027-175712",
+    "stage": "compile-raw-fix",
+    "exit": 0,
+    "seconds": 5.364
+  },
+  {
+    "run": "20261027-175712",
+    "stage": "raw-junit-fix",
+    "exit": 0,
+    "seconds": 15.846
+  },
+  {
+    "run": "20261027-175712",
+    "stage": "selected-observation-fix",
+    "exit": 0,
+    "seconds": 1.086
+  },
+  {
+    "run": "20261027-175712",
+    "stage": "load-fix",
+    "exit": 0,
+    "seconds": 0.992
+  },
+  {
+    "run": "20261027-183131",
+    "stage": "compile-raw-bug",
+    "exit": 0,
+    "seconds": 3.793
+  },
+  {
+    "run": "20261027-183131",
+    "stage": "raw-junit-bug",
+    "exit": 0,
+    "seconds": 12.253
+  },
+  {
+    "run": "20261027-183131",
+    "stage": "selected-observation-bug",
+    "exit": 0,
+    "seconds": 1.099
+  },
+  {
+    "run": "20261027-183131",
+    "stage": "load-bug",
+    "exit": 0,
+    "seconds": 0.947
+  },
+  {
+    "run": "20261027-183131",
+    "stage": "compile-raw-patch",
+    "exit": 0,
+    "seconds": 4.966
+  },
+  {
+    "run": "20261027-183131",
+    "stage": "raw-junit-patch",
+    "exit": 0,
+    "seconds": 12.585
+  },
+  {
+    "run": "20261027-183131",
+    "stage": "selected-observation-patch",
+    "exit": 0,
+    "seconds": 1.353
+  },
+  {
+    "run": "20261027-183131",
+    "stage": "load-patch",
+    "exit": 0,
+    "seconds": 1.198
+  },
+  {
+    "run": "20261027-183131",
+    "stage": "compile-raw-fix",
+    "exit": 0,
+    "seconds": 4.097
+  },
+  {
+    "run": "20261027-183131",
+    "stage": "raw-junit-fix",
+    "exit": 0,
+    "seconds": 13.238
+  },
+  {
+    "run": "20261027-183131",
+    "stage": "selected-observation-fix",
+    "exit": 0,
+    "seconds": 1.284
+  },
+  {
+    "run": "20261027-183131",
+    "stage": "load-fix",
+    "exit": 0,
+    "seconds": 1.133
+  },
+  {
+    "run": "20261027-183648",
+    "stage": "compile-raw-bug",
+    "exit": 0,
+    "seconds": 4.14
+  },
+  {
+    "run": "20261027-183648",
+    "stage": "raw-junit-bug",
+    "exit": 0,
+    "seconds": 13.021
+  },
+  {
+    "run": "20261027-183648",
+    "stage": "selected-observation-bug",
+    "exit": 0,
+    "seconds": 1.38
+  },
+  {
+    "run": "20261027-183648",
+    "stage": "load-bug",
+    "exit": 0,
+    "seconds": 0.877
+  },
+  {
+    "run": "20261027-183648",
+    "stage": "final-junit411-DiffTGen0Test-bug",
+    "exit": 0,
+    "seconds": 1.591
+  },
+  {
+    "run": "20261027-183648",
+    "stage": "compile-raw-patch",
+    "exit": 0,
+    "seconds": 3.402
+  },
+  {
+    "run": "20261027-183648",
+    "stage": "raw-junit-patch",
+    "exit": 0,
+    "seconds": 11.76
+  },
+  {
+    "run": "20261027-183648",
+    "stage": "selected-observation-patch",
+    "exit": 0,
+    "seconds": 1.23
+  },
+  {
+    "run": "20261027-183648",
+    "stage": "load-patch",
+    "exit": 0,
+    "seconds": 1.088
+  },
+  {
+    "run": "20261027-183648",
+    "stage": "final-junit411-DiffTGen0Test-patch",
+    "exit": 1,
+    "seconds": 1.541
+  },
+  {
+    "run": "20261027-183648",
+    "stage": "compile-raw-fix",
+    "exit": 0,
+    "seconds": 3.693
+  },
+  {
+    "run": "20261027-183648",
+    "stage": "raw-junit-fix",
+    "exit": 0,
+    "seconds": 11.583
+  },
+  {
+    "run": "20261027-183648",
+    "stage": "selected-observation-fix",
+    "exit": 0,
+    "seconds": 1.541
+  },
+  {
+    "run": "20261027-183648",
+    "stage": "load-fix",
+    "exit": 0,
+    "seconds": 1.104
+  },
+  {
+    "run": "20261027-183648",
+    "stage": "final-junit411-DiffTGen0Test-fix",
+    "exit": 0,
+    "seconds": 1.488
+  },
+  {
+    "run": "20261027-184225",
+    "stage": "compile-raw-bug",
+    "exit": 0,
+    "seconds": 4.296
+  },
+  {
+    "run": "20261027-184225",
+    "stage": "raw-junit-bug",
+    "exit": 0,
+    "seconds": 12.466
+  },
+  {
+    "run": "20261027-184225",
+    "stage": "selected-observation-bug",
+    "exit": 0,
+    "seconds": 1.344
+  },
+  {
+    "run": "20261027-184225",
+    "stage": "load-bug",
+    "exit": 0,
+    "seconds": 1.749
+  },
+  {
+    "run": "20261027-184225",
+    "stage": "compile-raw-patch",
+    "exit": 0,
+    "seconds": 4.185
+  },
+  {
+    "run": "20261027-184225",
+    "stage": "raw-junit-patch",
+    "exit": 0,
+    "seconds": 12.531
+  },
+  {
+    "run": "20261027-184225",
+    "stage": "selected-observation-patch",
+    "exit": 0,
+    "seconds": 1.291
+  },
+  {
+    "run": "20261027-184225",
+    "stage": "load-patch",
+    "exit": 0,
+    "seconds": 1.177
+  },
+  {
+    "run": "20261027-184225",
+    "stage": "compile-raw-fix",
+    "exit": 0,
+    "seconds": 4.549
+  },
+  {
+    "run": "20261027-184225",
+    "stage": "raw-junit-fix",
+    "exit": 0,
+    "seconds": 12.293
+  },
+  {
+    "run": "20261027-184225",
+    "stage": "selected-observation-fix",
+    "exit": 0,
+    "seconds": 0.961
+  },
+  {
+    "run": "20261027-184225",
+    "stage": "load-fix",
+    "exit": 0,
+    "seconds": 0.795
+  }
+]

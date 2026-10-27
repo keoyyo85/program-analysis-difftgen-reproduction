@@ -1,0 +1,2 @@
+cwd=/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/work/DiffTGen
+javac -cp /mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/work/deps/commons-lang-2.3.jar -d /mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/runs/20261027-184225/classes/patch /mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/sample/patch/BooleanUtils.java

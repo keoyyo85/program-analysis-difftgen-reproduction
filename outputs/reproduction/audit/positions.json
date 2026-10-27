@@ -1,0 +1,7 @@
+{
+  "delta_bug": "677,16",
+  "delta_patch": "677,16",
+  "oracle_javadoc": "624,4",
+  "oracle_declaration": "649,4",
+  "status": "MATCH"
+}
