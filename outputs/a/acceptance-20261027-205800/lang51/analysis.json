@@ -1,0 +1,161 @@
+{
+  "schema_version": "a.analysis.v1",
+  "artifact_kind": "candidate_inputs_not_execution_results",
+  "case_id": "existing-baseline-Lang_51-nopol-A-compatibility-only",
+  "case_kind": "real",
+  "statistics_eligible": false,
+  "support_status": "unsupported",
+  "scope": "local syntactic condition and straight-line parameter association; not whole-program impact",
+  "sources": {
+    "before_source": {
+      "path": "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/sample/bug/BooleanUtils.java",
+      "sha256": "ee5fe4714d2666a99e039eef4f97a6ab84113e12fd755e6660ceaeaaa7e7bf9b"
+    },
+    "patch_source": {
+      "path": "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/sample/patch/BooleanUtils.java",
+      "sha256": "62f04185d6c9274bcaa76c36cd3437cf9dfd1b8fcbee9f371b6b723963c79be7"
+    },
+    "diff_path": {
+      "path": "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/examples/a-compatibility/lang51/patch.diff",
+      "sha256": "836f82c139e6979ae8b432f8b748693a6e21ae04097f0a92b7a603706555422c"
+    }
+  },
+  "diff_hunks": [
+    {
+      "before_start": 674,
+      "before_count": 7,
+      "patch_start": 674,
+      "patch_count": 7
+    }
+  ],
+  "changes": [
+    {
+      "change_id": "change-1",
+      "file": "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/reproduction/sample/bug/BooleanUtils.java",
+      "method": {
+        "class_name": "org.apache.commons.lang.BooleanUtils",
+        "name": "toBoolean",
+        "signature": "org.apache.commons.lang.BooleanUtils#toBoolean(java.lang.String)",
+        "parameters": [
+          {
+            "name": "str",
+            "java_type": "java.lang.String",
+            "varargs": false
+          }
+        ],
+        "return_type": "boolean",
+        "is_static": true
+      },
+      "support_status": "unsupported",
+      "reasons": [
+        "cross_function_or_reflective_call_not_supported:charAt",
+        "cross_function_or_reflective_call_not_supported:charAt",
+        "before:complex_statement_control_not_supported:SwitchStatement",
+        "after:complex_statement_control_not_supported:SwitchStatement"
+      ],
+      "analysis_basis": [
+        "JDT structural AST",
+        "validated unified diff hunk overlap",
+        "unique changed condition per matching method signature",
+        "straight-line local alias substitution only"
+      ],
+      "before": {
+        "text": "ch == 'Y'",
+        "location": {
+          "start_offset": 25656,
+          "end_offset_exclusive": 25665,
+          "start_line": 677,
+          "start_column": 21,
+          "end_line": 677,
+          "end_column": 29
+        },
+        "statement_location": {
+          "start_offset": 25652,
+          "end_offset_exclusive": 25860,
+          "start_line": 677,
+          "start_column": 17,
+          "end_line": 681,
+          "end_column": 17
+        },
+        "control_kind": "IfStatement",
+        "controlled_ranges": {
+          "then": {
+            "start_offset": 25667,
+            "end_offset_exclusive": 25860,
+            "start_line": 677,
+            "start_column": 32,
+            "end_line": 681,
+            "end_column": 17
+          },
+          "else": null
+        },
+        "guards": [],
+        "association": {
+          "kind": "unsupported",
+          "reason": "complex_statement_control_not_supported:SwitchStatement"
+        }
+      },
+      "after": {
+        "text": "str!=null",
+        "location": {
+          "start_offset": 25656,
+          "end_offset_exclusive": 25665,
+          "start_line": 677,
+          "start_column": 21,
+          "end_line": 677,
+          "end_column": 29
+        },
+        "statement_location": {
+          "start_offset": 25652,
+          "end_offset_exclusive": 25860,
+          "start_line": 677,
+          "start_column": 17,
+          "end_line": 681,
+          "end_column": 17
+        },
+        "control_kind": "IfStatement",
+        "controlled_ranges": {
+          "then": {
+            "start_offset": 25667,
+            "end_offset_exclusive": 25860,
+            "start_line": 677,
+            "start_column": 32,
+            "end_line": 681,
+            "end_column": 17
+          },
+          "else": null
+        },
+        "guards": [],
+        "association": {
+          "kind": "unsupported",
+          "reason": "complex_statement_control_not_supported:SwitchStatement"
+        }
+      }
+    }
+  ],
+  "unhandled_changes": [],
+  "candidates": [],
+  "generation": {
+    "max_candidates": 8,
+    "max_length": 64,
+    "retained": 0,
+    "truncated_attempts": 0,
+    "events": [],
+    "status": "no_candidates; see unsupported reasons and skipped events",
+    "implementation": {
+      "version": "a.local.v1",
+      "python_analysis_sha256": "af2a4d2bcaa8f2f902327c978bf5eb8ce048ef74bfb7b4847dcce338f4f7cb93",
+      "ast_adapter_sha256": "3e109eb5218d14eec95c8e2c78234f16a97e1fda8fba32cb7d075f34f043ea47",
+      "parser": "author Eclipse JDT JLS4, Java7 syntax",
+      "binding_resolution": false
+    }
+  },
+  "limitations": [
+    "No target execution, oracle, or counterexample reduction",
+    "No interprocedural/reflection/complex object analysis",
+    "No guarantee of path reachability or business-valid inputs",
+    "No Cartesian product across independent conditions; one parameter varied at a time",
+    "One file pair; exactly one changed condition per unchanged static method signature",
+    "Integer literal comparisons only; no arithmetic inversion or named field constant resolution"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": "a.request.v1",
+  "case_id": "teaching-int-threshold",
+  "case_kind": "teaching",
+  "before_source": "before/Threshold.java",
+  "patch_source": "patch/Threshold.java",
+  "diff_path": "patch.diff",
+  "config": {
+    "base_arguments": {"label": "allowed"},
+    "parameter_constraints": {"label": {"min_length": 1}},
+    "max_candidates": 8,
+    "max_length": 64
+  }
+}

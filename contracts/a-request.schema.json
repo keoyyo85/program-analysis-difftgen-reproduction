@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "a.request.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "case_id", "case_kind", "before_source", "patch_source", "diff_path", "config"],
+  "properties": {
+    "schema_version": {"const": "a.request.v1"},
+    "case_id": {"type": "string", "minLength": 1},
+    "case_kind": {"enum": ["teaching", "real"]},
+    "before_source": {"type": "string", "minLength": 1},
+    "patch_source": {"type": "string", "minLength": 1},
+    "diff_path": {"type": "string", "minLength": 1},
+    "config": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "base_arguments": {"type": "object", "additionalProperties": {"$ref": "#/$defs/value"}},
+        "parameter_constraints": {
+          "type": "object", "additionalProperties": {
+            "type": "object", "additionalProperties": false,
+            "properties": {"min": {"type": "integer"}, "max": {"type": "integer"}, "min_length": {"type": "integer", "minimum": 0}, "max_length": {"type": "integer", "minimum": 0}}
+          }
+        },
+        "max_candidates": {"type": "integer", "minimum": 0, "maximum": 1000},
+        "max_length": {"type": "integer", "minimum": 0, "maximum": 100000},
+        "string_fill": {"type": "string", "pattern": "^[ -~]$"},
+        "array_fill_values": {"type": "object", "additionalProperties": false, "properties": {"int[]": {"type": "integer", "minimum": -2147483648, "maximum": 2147483647}, "boolean[]": {"type": "boolean"}, "java.lang.String[]": {"type": "string"}}}
+      }
+    }
+  },
+  "$defs": {
+    "scalar": {"type": ["integer", "string", "boolean"]},
+    "value": {"oneOf": [{"$ref": "#/$defs/scalar"}, {"type": "array", "items": {"$ref": "#/$defs/scalar"}}]}
+  }
+}

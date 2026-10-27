@@ -1,0 +1,25 @@
+test_ast_alias_assignment_ranges_and_changed_constants (test_ast_integration.AstIntegrationTests) ... ok
+test_ast_integer_extremes_and_enclosing_guard (test_ast_integration.AstIntegrationTests) ... ok
+test_ast_string_array_and_reversed_comparisons (test_ast_integration.AstIntegrationTests) ... ok
+test_complex_calls_loop_and_control_dependent_assignment_unsupported (test_ast_integration.AstIntegrationTests) ... ok
+test_external_state_in_controlled_branch_is_not_guessed (test_ast_integration.AstIntegrationTests) ... ok
+test_mismatched_or_incomplete_diff_rejected (test_ast_integration.AstIntegrationTests) ... ok
+test_signature_change_and_ambiguous_pair_not_guessed (test_ast_integration.AstIntegrationTests) ... ok
+test_syntax_error_is_not_silently_analyzed (test_ast_integration.AstIntegrationTests) ... ok
+test_utf16_source_positions_and_no_oracle_fields (test_ast_integration.AstIntegrationTests) ... ok
+test_arrays_require_explicit_element_configuration (test_boundaries.BoundaryTests) ... ok
+test_budget_records_each_truncation_and_zero_budget (test_boundaries.BoundaryTests) ... ok
+test_dedup_retains_both_provenances (test_boundaries.BoundaryTests) ... ok
+test_int_overflow_not_wrapped (test_boundaries.BoundaryTests) ... ok
+test_interface_rejects_argument_corruption (test_boundaries.BoundaryTests) ... ok
+test_mock_interface_is_explicit_and_not_statistical (test_boundaries.BoundaryTests) ... ok
+test_multiple_parameters_are_never_zero_filled (test_boundaries.BoundaryTests) ... ok
+test_oracle_and_unknown_configuration_rejected (test_boundaries.BoundaryTests) ... ok
+test_types_and_configuration_domains (test_boundaries.BoundaryTests) ... ok
+test_union_of_both_changed_thresholds (test_boundaries.BoundaryTests) ... ok
+test_zero_negative_and_resource_lengths (test_boundaries.BoundaryTests) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 82.447s
+
+OK

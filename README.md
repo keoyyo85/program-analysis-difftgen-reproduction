@@ -2,7 +2,17 @@
 
 《编译原理与程序分析》大作业-安全补丁的差分与评估
 
-本仓库保存作者原版 **DiffTGen** 的最小基线复现，包括真实运行日志、生成测试、三版本回放与验证记录。暂未实现课程新增模块。
+本仓库保存作者原版 **DiffTGen** 的最小基线复现，包括真实运行日志、生成测试、三版本回放与验证记录；现已新增 A 模块的局部条件分析和边界输入生成。B 的真实执行/oracle/缩减及 C 的批量实验/统计尚未实现。
+
+## A 模块最小闭环
+
+- [协作职责与文件归属](docs/COLLABORATION.md)、[v1 JSON 接口](docs/INTERFACES.md)。
+- [A 模块使用与适用范围](docs/a/README.md)、[简短演示材料](docs/a/DEMO.md)。
+- 代码位于 `modules/a`，复用作者已有 JDT jar；不改作者工具，不读取正确参考版本。
+- WSL 项目根目录运行 `bash modules/a/demo.sh`：自建教学例 `current > 5` → `current >= 5` 自动关联 score，生成 4、5、6；其他参数保留显式合法配置。教学和 mock 均不进入真实检出统计。
+- 验收入口 `bash modules/a/acceptance.sh`；新产物在 `outputs/a/`，历史 `outputs/reproduction/` 保留。
+
+以下为保留的原版基线记录，与新策略成果分开。
 
 ## 已完成的结果
 

@@ -1,0 +1,88 @@
+{
+  "kind": "A_acceptance_not_real_detection_statistics",
+  "statistics_eligible": false,
+  "steps": [
+    {
+      "step": "teaching",
+      "command": [
+        "bash",
+        "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/modules/a/run.sh",
+        "--request",
+        "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/examples/teaching/int-threshold/request.json",
+        "--output",
+        "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/a/acceptance-20261027-205348/teaching"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.159
+    },
+    {
+      "step": "mock-b",
+      "command": [
+        "/usr/bin/python3",
+        "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/interfaces/mock_b.py",
+        "--input",
+        "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/a/acceptance-20261027-205348/teaching/analysis.json",
+        "--output",
+        "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/a/acceptance-20261027-205348/teaching/b-mock.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.124
+    },
+    {
+      "step": "lang51-compatibility",
+      "command": [
+        "bash",
+        "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/modules/a/run.sh",
+        "--request",
+        "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/examples/a-compatibility/lang51/request.json",
+        "--output",
+        "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/a/acceptance-20261027-205348/lang51"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.576
+    },
+    {
+      "step": "correctness-tests",
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/tests/a",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 59.026
+    },
+    {
+      "step": "baseline-preservation",
+      "command": [
+        "git",
+        "diff",
+        "--exit-code",
+        "HEAD",
+        "--",
+        "outputs/reproduction"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 28.016
+    },
+    {
+      "step": "author-source-preservation",
+      "command": [
+        "git",
+        "-C",
+        "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/work/DiffTGen",
+        "diff",
+        "--exit-code",
+        "--",
+        "src",
+        "build.xml",
+        "tclassrunner.xml"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 0.827
+    }
+  ]
+}

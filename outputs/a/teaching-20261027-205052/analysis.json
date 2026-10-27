@@ -1,0 +1,371 @@
+{
+  "schema_version": "a.analysis.v1",
+  "artifact_kind": "candidate_inputs_not_execution_results",
+  "case_id": "teaching-int-threshold",
+  "case_kind": "teaching",
+  "statistics_eligible": false,
+  "support_status": "supported",
+  "scope": "local syntactic condition and straight-line parameter association; not whole-program impact",
+  "sources": {
+    "before_source": {
+      "path": "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/examples/teaching/int-threshold/before/Threshold.java",
+      "sha256": "4d1684f4318779d8cb7de433f6ed07e6c7c6f6230a084bee8ad9ff97613d990a"
+    },
+    "patch_source": {
+      "path": "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/examples/teaching/int-threshold/patch/Threshold.java",
+      "sha256": "582fc873cc49fa8ee0b8ecb3032e3556d6cfcf9df51e790c76f6e8112ce904db"
+    },
+    "diff_path": {
+      "path": "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/examples/teaching/int-threshold/patch.diff",
+      "sha256": "197019f0d0cca3d351fdf70c8ba73cc4955eac225e4cb53af17cd68b5d05d307"
+    }
+  },
+  "diff_hunks": [
+    {
+      "before_start": 5,
+      "before_count": 7,
+      "patch_start": 5,
+      "patch_count": 7
+    }
+  ],
+  "changes": [
+    {
+      "change_id": "change-1",
+      "file": "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/examples/teaching/int-threshold/before/Threshold.java",
+      "method": {
+        "class_name": "teaching.Threshold",
+        "name": "decide",
+        "signature": "teaching.Threshold#decide(int,java.lang.String)",
+        "parameters": [
+          {
+            "name": "score",
+            "java_type": "int",
+            "varargs": false
+          },
+          {
+            "name": "label",
+            "java_type": "java.lang.String",
+            "varargs": false
+          }
+        ],
+        "return_type": "int",
+        "is_static": true
+      },
+      "support_status": "supported",
+      "reasons": [],
+      "analysis_basis": [
+        "JDT structural AST",
+        "validated unified diff hunk overlap",
+        "unique changed condition per matching method signature",
+        "straight-line local alias substitution only"
+      ],
+      "before": {
+        "text": "current > 5",
+        "location": {
+          "start_offset": 232,
+          "end_offset_exclusive": 243,
+          "start_line": 8,
+          "start_column": 13,
+          "end_line": 8,
+          "end_column": 23
+        },
+        "statement_location": {
+          "start_offset": 228,
+          "end_offset_exclusive": 278,
+          "start_line": 8,
+          "start_column": 9,
+          "end_line": 10,
+          "end_column": 9
+        },
+        "control_kind": "IfStatement",
+        "controlled_ranges": {
+          "then": {
+            "start_offset": 245,
+            "end_offset_exclusive": 278,
+            "start_line": 8,
+            "start_column": 26,
+            "end_line": 10,
+            "end_column": 9
+          },
+          "else": null
+        },
+        "guards": [],
+        "association": {
+          "kind": "parameter",
+          "parameter": "score",
+          "java_type": "int",
+          "value_type": "int",
+          "measure": "value",
+          "evidence": [
+            "method parameter score",
+            "simple assignment current",
+            "integer literal AST"
+          ],
+          "operator": ">",
+          "boundary": 5
+        }
+      },
+      "after": {
+        "text": "current >= 5",
+        "location": {
+          "start_offset": 232,
+          "end_offset_exclusive": 244,
+          "start_line": 8,
+          "start_column": 13,
+          "end_line": 8,
+          "end_column": 24
+        },
+        "statement_location": {
+          "start_offset": 228,
+          "end_offset_exclusive": 279,
+          "start_line": 8,
+          "start_column": 9,
+          "end_line": 10,
+          "end_column": 9
+        },
+        "control_kind": "IfStatement",
+        "controlled_ranges": {
+          "then": {
+            "start_offset": 246,
+            "end_offset_exclusive": 279,
+            "start_line": 8,
+            "start_column": 27,
+            "end_line": 10,
+            "end_column": 9
+          },
+          "else": null
+        },
+        "guards": [],
+        "association": {
+          "kind": "parameter",
+          "parameter": "score",
+          "java_type": "int",
+          "value_type": "int",
+          "measure": "value",
+          "evidence": [
+            "method parameter score",
+            "simple assignment current",
+            "integer literal AST"
+          ],
+          "operator": ">=",
+          "boundary": 5
+        }
+      }
+    }
+  ],
+  "unhandled_changes": [],
+  "candidates": [
+    {
+      "candidate_id": "teaching-int-threshold-5a5822cb1cce",
+      "case_id": "teaching-int-threshold",
+      "method": {
+        "class_name": "teaching.Threshold",
+        "name": "decide",
+        "signature": "teaching.Threshold#decide(int,java.lang.String)",
+        "parameters": [
+          {
+            "name": "score",
+            "java_type": "int",
+            "varargs": false
+          },
+          {
+            "name": "label",
+            "java_type": "java.lang.String",
+            "varargs": false
+          }
+        ],
+        "return_type": "int",
+        "is_static": true
+      },
+      "arguments": [
+        {
+          "name": "score",
+          "java_type": "int",
+          "value": 4
+        },
+        {
+          "name": "label",
+          "java_type": "java.lang.String",
+          "value": "allowed"
+        }
+      ],
+      "provenance": [
+        {
+          "change_id": "change-1",
+          "side": "before",
+          "condition": "current > 5",
+          "parameter": "score",
+          "boundary": 5,
+          "offset": -1,
+          "rule": "threshold_minus_equal_plus_one",
+          "measure": "value"
+        },
+        {
+          "change_id": "change-1",
+          "side": "after",
+          "condition": "current >= 5",
+          "parameter": "score",
+          "boundary": 5,
+          "offset": -1,
+          "rule": "threshold_minus_equal_plus_one",
+          "measure": "value"
+        }
+      ],
+      "validation": {
+        "type_and_config_checked": true,
+        "business_validity": "not_proven",
+        "path_feasibility": "not_proven",
+        "oracle_used": false
+      }
+    },
+    {
+      "candidate_id": "teaching-int-threshold-6384932435ce",
+      "case_id": "teaching-int-threshold",
+      "method": {
+        "class_name": "teaching.Threshold",
+        "name": "decide",
+        "signature": "teaching.Threshold#decide(int,java.lang.String)",
+        "parameters": [
+          {
+            "name": "score",
+            "java_type": "int",
+            "varargs": false
+          },
+          {
+            "name": "label",
+            "java_type": "java.lang.String",
+            "varargs": false
+          }
+        ],
+        "return_type": "int",
+        "is_static": true
+      },
+      "arguments": [
+        {
+          "name": "score",
+          "java_type": "int",
+          "value": 5
+        },
+        {
+          "name": "label",
+          "java_type": "java.lang.String",
+          "value": "allowed"
+        }
+      ],
+      "provenance": [
+        {
+          "change_id": "change-1",
+          "side": "before",
+          "condition": "current > 5",
+          "parameter": "score",
+          "boundary": 5,
+          "offset": 0,
+          "rule": "threshold_minus_equal_plus_one",
+          "measure": "value"
+        },
+        {
+          "change_id": "change-1",
+          "side": "after",
+          "condition": "current >= 5",
+          "parameter": "score",
+          "boundary": 5,
+          "offset": 0,
+          "rule": "threshold_minus_equal_plus_one",
+          "measure": "value"
+        }
+      ],
+      "validation": {
+        "type_and_config_checked": true,
+        "business_validity": "not_proven",
+        "path_feasibility": "not_proven",
+        "oracle_used": false
+      }
+    },
+    {
+      "candidate_id": "teaching-int-threshold-aa600294e878",
+      "case_id": "teaching-int-threshold",
+      "method": {
+        "class_name": "teaching.Threshold",
+        "name": "decide",
+        "signature": "teaching.Threshold#decide(int,java.lang.String)",
+        "parameters": [
+          {
+            "name": "score",
+            "java_type": "int",
+            "varargs": false
+          },
+          {
+            "name": "label",
+            "java_type": "java.lang.String",
+            "varargs": false
+          }
+        ],
+        "return_type": "int",
+        "is_static": true
+      },
+      "arguments": [
+        {
+          "name": "score",
+          "java_type": "int",
+          "value": 6
+        },
+        {
+          "name": "label",
+          "java_type": "java.lang.String",
+          "value": "allowed"
+        }
+      ],
+      "provenance": [
+        {
+          "change_id": "change-1",
+          "side": "before",
+          "condition": "current > 5",
+          "parameter": "score",
+          "boundary": 5,
+          "offset": 1,
+          "rule": "threshold_minus_equal_plus_one",
+          "measure": "value"
+        },
+        {
+          "change_id": "change-1",
+          "side": "after",
+          "condition": "current >= 5",
+          "parameter": "score",
+          "boundary": 5,
+          "offset": 1,
+          "rule": "threshold_minus_equal_plus_one",
+          "measure": "value"
+        }
+      ],
+      "validation": {
+        "type_and_config_checked": true,
+        "business_validity": "not_proven",
+        "path_feasibility": "not_proven",
+        "oracle_used": false
+      }
+    }
+  ],
+  "generation": {
+    "max_candidates": 8,
+    "max_length": 64,
+    "retained": 3,
+    "truncated_attempts": 0,
+    "events": [],
+    "status": "candidates_available",
+    "implementation": {
+      "version": "a.local.v1",
+      "python_analysis_sha256": "50c9c10b8a5224ca437d71260eb99c2c871078c7bd5ae61d0eecfd44a4f99f0c",
+      "ast_adapter_sha256": "3e109eb5218d14eec95c8e2c78234f16a97e1fda8fba32cb7d075f34f043ea47",
+      "parser": "author Eclipse JDT JLS4, Java7 syntax",
+      "binding_resolution": false
+    }
+  },
+  "limitations": [
+    "No target execution, oracle, or counterexample reduction",
+    "No interprocedural/reflection/complex object analysis",
+    "No guarantee of path reachability or business-valid inputs",
+    "No Cartesian product across independent conditions; one parameter varied at a time",
+    "One file pair; exactly one changed condition per unchanged static method signature",
+    "Integer literal comparisons only; no arithmetic inversion or named field constant resolution"
+  ]
+}

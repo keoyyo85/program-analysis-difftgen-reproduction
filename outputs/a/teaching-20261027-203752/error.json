@@ -1,0 +1,6 @@
+{
+  "schema_version": "a.error.v1",
+  "status": "error",
+  "reason": "AST adapter compilation failed; see bridge-compile.stderr.log",
+  "statistics_eligible": false
+}

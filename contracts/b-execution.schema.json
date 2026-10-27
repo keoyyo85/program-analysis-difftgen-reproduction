@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "b.execution.v1",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "case_id", "case_kind", "run_kind", "statistics_eligible", "results"],
+  "properties": {
+    "schema_version": {"const": "b.execution.v1"}, "case_id": {"type": "string"}, "case_kind": {"enum": ["teaching", "real"]},
+    "run_kind": {"enum": ["mock", "real"]}, "statistics_eligible": {"type": "boolean"},
+    "results": {"type": "array", "items": {"type": "object", "required": ["candidate_id", "execution_status", "versions", "oracle", "reduction"], "properties": {"candidate_id": {"type": "string"}, "execution_status": {"type": "string"}, "versions": {"type": "object", "required": ["before", "patch", "reference"]}, "oracle": {"type": "object", "required": ["status", "classification"]}, "reduction": {"type": "object", "required": ["status"]}}}}
+  },
+  "allOf": [
+    {"if": {"properties": {"run_kind": {"const": "mock"}}}, "then": {"properties": {"statistics_eligible": {"const": false}, "results": {"items": {"properties": {"execution_status": {"const": "simulated"}, "oracle": {"properties": {"status": {"const": "not_evaluated"}, "classification": {"type": "null"}}}}}}}}},
+    {"if": {"properties": {"case_kind": {"const": "teaching"}}}, "then": {"properties": {"statistics_eligible": {"const": false}}}}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "kind": "A_correctness_checks_not_detection_experiment",
+  "command": [
+    "/usr/bin/python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/tests/a",
+    "-v"
+  ],
+  "cwd": "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5",
+  "exit_code": 0,
+  "elapsed_seconds": 43.546,
+  "statistics_eligible": false
+}

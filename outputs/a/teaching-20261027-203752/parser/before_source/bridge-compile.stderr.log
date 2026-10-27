@@ -1,0 +1,11 @@
+/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/modules/a/java/AstExport.java:75: error: cannot find symbol
+        ASTParser parser=ASTParser.newParser(AST.JLS8);
+                                                ^
+  symbol:   variable JLS8
+  location: class AST
+/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/modules/a/java/AstExport.java:77: error: cannot find symbol
+        Map<String,String> opts=new HashMap<String,String>();JavaCore.setComplianceOptions(JavaCore.VERSION_1_8,opts);
+                                                                                                   ^
+  symbol:   variable VERSION_1_8
+  location: class JavaCore
+2 errors

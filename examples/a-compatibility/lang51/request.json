@@ -1,0 +1,9 @@
+{
+  "schema_version": "a.request.v1",
+  "case_id": "existing-baseline-Lang_51-nopol-A-compatibility-only",
+  "case_kind": "real",
+  "before_source": "../../../outputs/reproduction/sample/bug/BooleanUtils.java",
+  "patch_source": "../../../outputs/reproduction/sample/patch/BooleanUtils.java",
+  "diff_path": "patch.diff",
+  "config": {"max_candidates": 8, "max_length": 64}
+}

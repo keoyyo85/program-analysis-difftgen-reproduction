@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "kind": "A_mechanism_acceptance_only",
+  "statistics_eligible": false,
+  "teaching_candidates": 3,
+  "lang51_new_strategy": "unsupported; zero candidates; no baseline replay",
+  "b_adapter": "mock only; no target execution/oracle/reduction",
+  "schema_validation": "full JSON Schema validation passed using installed jsonschema",
+  "baseline_tracked_evidence_unchanged": true,
+  "author_source_unchanged": true
+}
