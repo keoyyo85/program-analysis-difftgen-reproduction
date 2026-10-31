@@ -4,6 +4,8 @@
 
 ## 运行
 
+独立交付/B 接入冻结说明见 [B_HANDOFF.md](B_HANDOFF.md)，方法报告见 [REPORT.md](REPORT.md)，真实补丁筛选与未完成项见 [REAL_CASES.md](REAL_CASES.md)。接口保持 a.analysis.v1。
+
 在现有 WSL Ubuntu-22.04 中进入项目目录：
 
 ```bash
@@ -12,6 +14,9 @@ bash modules/a/demo.sh
 
 # 解析/生成/接口/边界的正确性检查（不运行基线）
 bash modules/a/check.sh
+
+# 全新 A 缓存 javac + 内容断言 + 24 项测试 + 错误CLI/B mock；不执行目标三版本
+bash modules/a/handoff-check.sh
 
 # 教学 + 旧样例适用性 + 正确性检查 + 基线保留性的最小验收
 bash modules/a/acceptance.sh

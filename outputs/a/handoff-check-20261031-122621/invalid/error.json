@@ -1,0 +1,6 @@
+{
+  "schema_version": "a.error.v1",
+  "status": "error",
+  "reason": "REQUEST_SCHEMA: exact v1 fields required; reference/oracle/unknown fields forbidden",
+  "statistics_eligible": false
+}

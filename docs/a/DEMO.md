@@ -51,3 +51,6 @@ flowchart LR
 b-mock.json 的 run_kind 是 mock，所有 value 都是 MOCK_ONLY，oracle 未评估。它仅证明 B 能按候选 ID、有序参数及类型读入；不说明补丁好坏。
 
 Lang_51 仍作为历史原版成功基线。A 对其只做适用性检查：charAt/字符比较、null 检查及 switch 控制超出首版范围，输出 unsupported 和 0 候选。这里没有硬编码或重新发现 Fes，也没有重新运行已有基线。
+## A 独立交付补充（2026-10-31）
+
+演示入口仍为 `bash modules/a/demo.sh`；完整方法步骤见 REPORT.md，B 稳定读取见 B_HANDOFF.md。真实样例筛选与排除见 REAL_CASES.md，本轮未取得范围内真实正例；不得把上述教学候选或 mock 称为真实反例/检出率提升。独立内容验收入口为 `bash modules/a/handoff-check.sh`，从新缓存编译适配器并检查实际条件、参数、范围、值和规则。

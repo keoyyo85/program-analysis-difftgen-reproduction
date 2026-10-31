@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "artifact_kind": "A_independent_content_verification",
+  "statistics_eligible": false,
+  "fresh_cache_compile": true,
+  "readme_single_command": true,
+  "content_assertions": true,
+  "unit_tests": 24,
+  "teaching_candidates": 3,
+  "lang51": "unsupported; no candidates",
+  "error_cli_exit": 2,
+  "interface_version": "a.analysis.v1",
+  "b": "mock only",
+  "real_positive_case": "not obtained; documented source exclusions and API limit",
+  "total_stage_seconds": 144.619
+}

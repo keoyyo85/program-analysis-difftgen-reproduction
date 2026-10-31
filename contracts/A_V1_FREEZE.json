@@ -1,0 +1,12 @@
+{
+  "interface_version": "a.analysis.v1",
+  "request_version": "a.request.v1",
+  "branch": "codex/a-independent-delivery",
+  "compatibility_base": "c0cf86be9c584110b44a86bca074909da1af32bb",
+  "files_sha256": {
+    "contracts/a-request.schema.json": "76ce9032aef5f367bbde84d859185a939bbe3686fa507b47736685675275d7a2",
+    "contracts/a-analysis.schema.json": "f6f99d7c0e856f1c1ab8f54775958257094032688e554443c7365e9813303976",
+    "interfaces/a_contract.py": "8fd0a5e1e8f05b606bd7ca67af14611ef7480430c8b59aebca4354537b095f2c"
+  },
+  "note": "A contract byte freeze; B real result model is not frozen"
+}

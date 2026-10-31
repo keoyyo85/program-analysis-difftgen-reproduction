@@ -6,6 +6,8 @@
 
 ## A 模块最小闭环
 
+2026-10-31 独立交付见 [交付记录](outputs/a/handoff/DELIVERY.md) 与 [B 冻结接入说明](docs/a/B_HANDOFF.md)。运行 `bash modules/a/handoff-check.sh` 可从全新 A 编译缓存复核内容正确性；24项测试已实测通过。真实范围内正例尚待取得，排除/访问限制见 [真实样例记录](docs/a/REAL_CASES.md)，不能据教学候选宣称检出率提升。
+
 - [协作职责与文件归属](docs/COLLABORATION.md)、[v1 JSON 接口](docs/INTERFACES.md)。
 - [A 模块使用与适用范围](docs/a/README.md)、[简短演示材料](docs/a/DEMO.md)。
 - 代码位于 `modules/a`，复用作者已有 JDT jar；不改作者工具，不读取正确参考版本。

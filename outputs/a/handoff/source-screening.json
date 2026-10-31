@@ -1,0 +1,22 @@
+{
+  "record_kind": "manually_transcribed_source_screening_from_actual_tool_responses_not_raw_http_archive",
+  "date": "2026-10-31",
+  "statistics_eligible": false,
+  "repository": "https://github.com/TheAlgorithms/Java",
+  "queries": ["fix boundary", "fix negative", "fix zero", "fix factorial", "fix prime", "fix fibonacci", "fix palindrome", "fix off-by-one", "fix condition", "fix incorrect"],
+  "inspected_production_patch_metadata": [
+    {"commit": "dda712c0c7a77f80390dfd8caab14fb1a2480225", "parent": "2b3e82fd4c76a5b9475521154f65baa86e24250c", "path": "Dynamic Programming/Fibonacci.java", "title": "Merge pull request #709 from HeikoAlexanderWeber/bug/708, fix #708", "decision": "excluded: recursive calls, Map state and loop/local induction variable"},
+    {"commit": "ef61ee8920d3db606d94160af4307f5d1a80459f", "parent": "af9aad308151ffeda699acdabed09a7e90e194a6", "path": "src/main/java/com/thealgorithms/maths/SumOfSquares.java", "title": "fix: reject negative input in SumOfSquares and add tests (#7543)", "decision": "excluded: added guard rather than existing comparison replacement; object creation and method call"},
+    {"commit": "55f551b17bd0c48b7cb1ba7ecfb7092803c7a150", "parent": "171bdc5cb06df69d9070d5ed1f95a3544a4276e9", "path": "src/main/java/com/thealgorithms/searches/ExponentialSearch.java", "title": "Fix ExponentialSearch missing boundary elements and not returning -1 (#7556)", "decision": "excluded: generic instance method, cross-function calls, loop, changed return expression"}
+  ],
+  "source_pairs_archived": 0,
+  "real_positive_cases_admitted": 0,
+  "access_failure": {
+    "endpoint": "https://api.github.com/repos/TheAlgorithms/Java/commits/d22420fea8d7b05d02e42111d9bc5e24137e907f",
+    "observed_message": "API rate limit exceeded for 23.172.200.72. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)",
+    "handling": "stopped GitHub REST queries; no identity/IP/credential changes or alternate source download to bypass limit",
+    "note": "A PowerShell foreach had two already-planned subsequent calls to the same API; all three returned the same limit. No further queries were made. Earlier c502da807c994f48dc6bd77dce3a46a1ed5f2d8d query had transport EOF; it is not a verified case."
+  },
+  "oracle_isolation": "A requests read before/patch/diff only. Commit metadata included upstream test diff listings; no upstream test answer was used to choose candidate values. No independent reference was obtained or supplied to A.",
+  "next_step": "When access is available, acquire a small eligible complete source pair with byte hashes and license, then verify content; do not rename teaching input or rewrite a real patch into scope."
+}

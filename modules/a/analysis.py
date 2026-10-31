@@ -152,6 +152,33 @@ def complex_features(node):
     for ch in children(node): reasons.extend(complex_features(ch))
     return sorted(set(reasons))
 
+
+def unresolved_body_names(method):
+    """Reject opaque unqualified state too (e.g. an imported static field).
+
+    This is a syntactic rejection check, not symbol binding or value inference.
+    """
+    known = {p['name'] for p in method['parameters']}
+    for n in descendants(method.get('body')):
+        if n['kind'] in ('VariableDeclarationFragment', 'SingleVariableDeclaration'):
+            known.add(identifier(n['name']))
+    unknown = set()
+    def visit(n):
+        if not n or n['kind'] in ('SimpleType', 'QualifiedType', 'ArrayType', 'PrimitiveType'): return
+        if n['kind'] == 'SimpleName':
+            if identifier(n) not in known: unknown.add(identifier(n))
+            return
+        for key, value in n.items():
+            if key == 'span': continue
+            # Method/field name is separately checked by complex_features/resolve.
+            if key == 'name' and n['kind'] in ('MethodInvocation', 'QualifiedName', 'FieldAccess'): continue
+            if isinstance(value, dict) and 'kind' in value: visit(value)
+            elif isinstance(value, list):
+                for x in value:
+                    if isinstance(x, dict) and 'kind' in x: visit(x)
+    visit(method.get('body'))
+    return ['unresolved_body_name_requires_binding:' + x for x in sorted(unknown)]
+
 def condition_records(method, source):
     records = []
     env = {p['name']: {'kind': 'parameter', 'parameter': p['name'], 'java_type': p['java_type'],
@@ -349,6 +376,8 @@ def analyze(request, request_dir, evidence_dir):
         reasons = []
         reasons.extend(complex_features(bm.get('body')))
         reasons.extend(complex_features(pm.get('body')))
+        reasons.extend(unresolved_body_names(bm))
+        reasons.extend(unresolved_body_names(pm))
         if b['text'] == p['text']: reasons.append('condition_text_unchanged_body_only_or_same_line_change')
         if bm['constructor'] or not bm['is_static'] or not pm['is_static']: reasons.append('instance_state_or_constructor_not_supported')
         if bm.get('owner_has_fields_or_inheritance') or pm.get('owner_has_fields_or_inheritance'): reasons.append('declaring_class_fields_or_inheritance_require_binding_state_analysis')

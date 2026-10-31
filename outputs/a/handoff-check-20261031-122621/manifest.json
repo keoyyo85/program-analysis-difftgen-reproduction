@@ -1,0 +1,89 @@
+{
+  "steps": [
+    {
+      "name": "java-version",
+      "command": [
+        "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/work/deps/zulu8.94.0.17-ca-jdk8.0.492-linux_x64/bin/java",
+        "-version"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.821
+    },
+    {
+      "name": "readme-single-command",
+      "command": [
+        "bash",
+        "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/modules/a/run.sh",
+        "--request",
+        "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/examples/teaching/int-threshold/request.json",
+        "--output",
+        "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/a/handoff-check-20261031-122621/teaching"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 17.946
+    },
+    {
+      "name": "correctness-tests",
+      "command": [
+        "bash",
+        "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/tests/a/run.sh"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 89.081
+    },
+    {
+      "name": "lang51",
+      "command": [
+        "bash",
+        "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/modules/a/run.sh",
+        "--request",
+        "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/examples/a-compatibility/lang51/request.json",
+        "--output",
+        "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/a/handoff-check-20261031-122621/lang51"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.74
+    },
+    {
+      "name": "baseline-preservation",
+      "command": [
+        "git",
+        "diff",
+        "--exit-code",
+        "c0cf86b",
+        "--",
+        "outputs/reproduction"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 26.542
+    },
+    {
+      "name": "b-mock-interface",
+      "command": [
+        "/usr/bin/python3",
+        "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/interfaces/mock_b.py",
+        "--input",
+        "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/a/handoff-check-20261031-122621/teaching/analysis.json",
+        "--output",
+        "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/a/handoff-check-20261031-122621/teaching/b-mock.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.174
+    },
+    {
+      "name": "error-contract",
+      "command": [
+        "bash",
+        "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/modules/a/run.sh",
+        "--request",
+        "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/a/handoff-check-20261031-122621/invalid-request.json",
+        "--output",
+        "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/outputs/a/handoff-check-20261031-122621/invalid"
+      ],
+      "exit_code": 2,
+      "elapsed_seconds": 0.315
+    }
+  ],
+  "cache": "/mnt/d/CodexOutputs/2026-10-27/14-difftgen-https-github-com-qixin5/work/a-build/handoff-20261031-122621",
+  "statistics_eligible": false
+}

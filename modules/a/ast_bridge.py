@@ -21,11 +21,16 @@ def export_ast(source_path, evidence_dir):
     src = ROOT / 'modules/a/java/AstExport.java'
     # Separate cache; never rebuild or edit the author tool.
     key = hashlib.sha256(src.read_bytes()).hexdigest()[:16]
-    build = ROOT / 'work/a-build' / key
+    cache = Path(os.environ.get('DIFFTGEN_A_CACHE_DIR', ROOT / 'work/a-build')).resolve()
+    if not cache.is_relative_to((ROOT / 'work/a-build').resolve()):
+        raise ValueError('A cache must remain under project work/a-build')
+    build = cache / key
     build.mkdir(parents=True, exist_ok=True)
     cp = str(lib / '*')
     if not (build / 'AstExport.class').exists():
-        p = subprocess.run([str(javac), '-encoding', 'UTF-8', '-cp', cp, '-d', str(build), str(src)], capture_output=True, text=True, timeout=90)
+        compile_command = [str(javac), '-encoding', 'UTF-8', '-cp', cp, '-d', str(build), str(src)]
+        (evidence_dir / 'bridge-compile.command.json').write_text(json.dumps(compile_command), encoding='utf-8')
+        p = subprocess.run(compile_command, capture_output=True, text=True, timeout=90)
         (evidence_dir / 'bridge-compile.stdout.log').write_text(p.stdout, encoding='utf-8')
         (evidence_dir / 'bridge-compile.stderr.log').write_text(p.stderr, encoding='utf-8')
         if p.returncode: raise ValueError('AST adapter compilation failed; see bridge-compile.stderr.log')

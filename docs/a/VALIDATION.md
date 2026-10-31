@@ -31,3 +31,6 @@
 ## 没有完成的内容
 
 B 的三版本隔离执行、oracle 与缩减、C 的真实配置/批量统计均未实现。A 不解决任意 Java 符号绑定、复杂跨函数依赖、对象状态、路径约束求解或全程序影响传播。分析和预算的限制见 README 及每份 analysis.json 的 limitations。
+# 2026-10-31 独立复核补充
+
+本轮重新阅读实现与历史记录，没有把既有 PASS 当作当前证据。新增内容测试及新缓存构建实测通过：outputs/a/handoff-check-20261031-122621/result.json、manifest.json、correctness-tests.stderr.log（24项，88.282秒）。独立步骤合计144.619秒；每步命令、退出码、stdout/stderr保留。检查实际条件、参数链、分支范围、两侧候选、哈希、错误CLI，而非只检查JSON存在。新测试暴露风险后修正未限定外部字段的保守拒绝；接口文件字节不变，见 contracts/A_V1_FREEZE.json。真实正例仍欠缺，未新增真实检出实验；详见 REAL_CASES.md / REPORT.md。

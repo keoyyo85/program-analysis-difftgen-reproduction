@@ -3,6 +3,7 @@ import argparse
 import json
 from pathlib import Path
 import sys
+import subprocess
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from modules.a.analysis import analyze
 
@@ -18,7 +19,7 @@ def main():
         (args.output/'analysis.json').write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
         print(json.dumps({'case_id': result['case_id'], 'support_status': result['support_status'], 'candidates': len(result['candidates']), 'output': str(args.output)}, ensure_ascii=False))
         return 0
-    except (ValueError, OSError) as e:
+    except (ValueError, OSError, subprocess.TimeoutExpired) as e:
         (args.output/'error.json').write_text(json.dumps({'schema_version': 'a.error.v1', 'status': 'error', 'reason': str(e), 'statistics_eligible': False}, ensure_ascii=False, indent=2), encoding='utf-8')
         print(str(e), file=sys.stderr); return 2
 

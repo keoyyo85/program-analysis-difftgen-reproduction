@@ -1,0 +1,84 @@
+{
+  "schema_version": "b.execution.v1",
+  "case_id": "teaching-int-threshold",
+  "case_kind": "teaching",
+  "run_kind": "mock",
+  "statistics_eligible": false,
+  "results": [
+    {
+      "candidate_id": "teaching-int-threshold-5a5822cb1cce",
+      "execution_status": "simulated",
+      "versions": {
+        "before": {
+          "status": "simulated",
+          "value": "MOCK_ONLY"
+        },
+        "patch": {
+          "status": "simulated",
+          "value": "MOCK_ONLY"
+        },
+        "reference": {
+          "status": "simulated",
+          "value": "MOCK_ONLY"
+        }
+      },
+      "oracle": {
+        "status": "not_evaluated",
+        "classification": null
+      },
+      "reduction": {
+        "status": "not_implemented"
+      }
+    },
+    {
+      "candidate_id": "teaching-int-threshold-6384932435ce",
+      "execution_status": "simulated",
+      "versions": {
+        "before": {
+          "status": "simulated",
+          "value": "MOCK_ONLY"
+        },
+        "patch": {
+          "status": "simulated",
+          "value": "MOCK_ONLY"
+        },
+        "reference": {
+          "status": "simulated",
+          "value": "MOCK_ONLY"
+        }
+      },
+      "oracle": {
+        "status": "not_evaluated",
+        "classification": null
+      },
+      "reduction": {
+        "status": "not_implemented"
+      }
+    },
+    {
+      "candidate_id": "teaching-int-threshold-aa600294e878",
+      "execution_status": "simulated",
+      "versions": {
+        "before": {
+          "status": "simulated",
+          "value": "MOCK_ONLY"
+        },
+        "patch": {
+          "status": "simulated",
+          "value": "MOCK_ONLY"
+        },
+        "reference": {
+          "status": "simulated",
+          "value": "MOCK_ONLY"
+        }
+      },
+      "oracle": {
+        "status": "not_evaluated",
+        "classification": null
+      },
+      "reduction": {
+        "status": "not_implemented"
+      }
+    }
+  ]
+}
