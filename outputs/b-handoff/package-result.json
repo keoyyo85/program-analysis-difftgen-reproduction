@@ -1,0 +1,11 @@
+{
+  "archive": "A-to-B-9bb8fc4.zip",
+  "sha256": "f2593cf10d98059b15ef0792da80ad62a6031b57f7d48996c91ac5c792d0c104",
+  "size_bytes": 133067,
+  "files": 63,
+  "zip_integrity": "PASS",
+  "a_frozen_commit": "9bb8fc496ecd5f89f27b60555e1339960a206622",
+  "statistics_eligible": false,
+  "extracted_smoke_exit_code": 0,
+  "extracted_smoke": "PASS"
+}

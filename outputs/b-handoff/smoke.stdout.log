@@ -1,0 +1,4 @@
+teaching-int-threshold-5a5822cb1cce teaching.Threshold#decide(int,java.lang.String) [{'name': 'score', 'java_type': 'int', 'value': 4}, {'name': 'label', 'java_type': 'java.lang.String', 'value': 'allowed'}]
+teaching-int-threshold-6384932435ce teaching.Threshold#decide(int,java.lang.String) [{'name': 'score', 'java_type': 'int', 'value': 5}, {'name': 'label', 'java_type': 'java.lang.String', 'value': 'allowed'}]
+teaching-int-threshold-aa600294e878 teaching.Threshold#decide(int,java.lang.String) [{'name': 'score', 'java_type': 'int', 'value': 6}, {'name': 'label', 'java_type': 'java.lang.String', 'value': 'allowed'}]
+PASS: package integrity + A consumer checks + mapped source hashes; no Java execution/oracle
